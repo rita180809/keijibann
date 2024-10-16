@@ -1,8 +1,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -39,4 +39,62 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.App {
+  padding: 20px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20xp;
+  width: 60%;
+  text-align: center;
+}
+
+li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.header {
+  background-color: #4CAF50; /* ヘッダーの背景色 */
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* ヘッダーの幅をウィンドウに合わせる */
+  height: 20vh; /* 例として高さをビューポートの高さに合わせる */
+  box-sizing: border-box; /* パディングを含めて計算 */
+  display: block;
+}
+
+.header h1 {
+  margin: 0;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(254, 8, 8);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.thread-item {
+  color: #3498db; /* スレッド情報の文字の色 */
 }
