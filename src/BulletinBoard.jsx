@@ -24,9 +24,9 @@ const BulletinBoard = () => {
         <h1>掲示板</h1>
         <nav>
           <ul className="nav-links">
-            <li><a href="/">ホーム</a></li>
-            <li><a href="/threads">スレッド一覧</a></li>
-            <li><a href="/new">新規作成</a></li>
+            <li><Link to="/">ホーム</Link></li>
+            <li><Link to="/threads">スレッド一覧</Link></li>
+            <li><Link to="/new">新規作成</Link></li>
           </ul>
         </nav>
       </header>
