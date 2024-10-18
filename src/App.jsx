@@ -1,22 +1,16 @@
-import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BulletinBoard from './BulletinBoard';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import CreateThread from './CreateThread';
 import './App.css';
 
 function App() {
   return (
-    <>
       <Router>
-        <Switch>
-          <Route exact path="/" component={BulletinBoard} />
-          <Route path="/threads/new" component={CreateThread} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<BulletinBoard />} />
+          <Route path="/threads/new" element={<CreateThread />} />
+        </Routes>
       </Router>
-
-      <BulletinBoard />
-    </>
   );
 }
 

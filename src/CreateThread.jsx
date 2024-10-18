@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const CreateThread = () => {
   const [title, setTitle] = useState('');
-  const history = useHistory();
+  const Navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,7 +18,7 @@ const CreateThread = () => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      history.push('/');
+      Navigate('/');
     } catch (error) {
       console.error('Error creating thread:', error);
     }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getThreads } from './api';
 import './App.css';
 
@@ -25,8 +26,8 @@ const BulletinBoard = () => {
         <nav>
           <ul className="nav-links">
             <li><Link to="/">ホーム</Link></li>
-            <li><Link to="/threads">スレッド一覧</Link></li>
-            <li><Link to="/new">新規作成</Link></li>
+            <li><Link to="/">スレッド一覧</Link></li>
+            <li><Link to="/threads/new">新規作成</Link></li>
           </ul>
         </nav>
       </header>
