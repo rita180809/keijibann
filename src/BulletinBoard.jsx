@@ -33,7 +33,9 @@ const BulletinBoard = () => {
       </header>
       <ul>
         {threads.map(thread => (
-          <li key={thread.id} className="thread-item">{thread.title}</li>
+          <li key={thread.id}>
+            <Link to={`/threads/${thread.id}`} className="thread-item">{thread.title} </Link>
+          </li>
         ))}
       </ul>
     </div>
