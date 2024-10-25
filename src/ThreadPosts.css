@@ -1,0 +1,79 @@
+.thread-posts-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.thread-posts-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.thread-posts-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.thread-posts-container ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+}
+
+.thread-posts-container form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thread-posts-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.thread-posts-container form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333; /* テキストの色を変更 */
+    background-color: #fff; /* ボックスの背景色を変更 */
+}
+
+.thread-posts-container form input::placeholder {
+    color: #aaa; /* プレースホルダーの色を変更 */
+}
+
+.thread-posts-container form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.thread-posts-container form button:hover {
+    background-color: #0056b3;
+}
+
+.home-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}

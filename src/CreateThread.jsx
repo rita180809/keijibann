@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const CreateThread = () => {
   const [title, setTitle] = useState('');
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,7 +18,7 @@ const CreateThread = () => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      Navigate('/');
+      navigate('/');
     } catch (error) {
       console.error('Error creating thread:', error);
     }

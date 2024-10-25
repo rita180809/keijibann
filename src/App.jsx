@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BulletinBoard from './BulletinBoard';
 import CreateThread from './CreateThread';
 import ThreadPosts from './ThreadPosts';
@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<BulletinBoard />} />
           <Route path="/threads/new" element={<CreateThread />} />
-          <Route path="/thread/:thread_id" element={<ThreadPosts />} />
+          <Route path="/threads/:thread_id" element={<ThreadPosts />} />{/* これでルート設定が正しいか確認 */}
         </Routes>
       </Router>
   );
